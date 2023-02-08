@@ -10,7 +10,7 @@
     "component",
     "IframeWrapper"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.prod.json && vite build",
