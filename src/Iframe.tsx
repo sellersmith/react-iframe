@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom'
-import React, { forwardRef, HTMLProps, useEffect, useRef, useState } from 'react'
+import React, { forwardRef, HTMLAttributes, HTMLProps, useEffect, useRef, useState } from 'react'
 import { omit } from './utils/omit'
 
 let doc
@@ -15,12 +15,13 @@ export const FrameContext = React.createContext({ document: doc, window: win })
 
 export const useFrame = () => React.useContext(FrameContext)
 
-interface IframeProps extends HTMLProps<HTMLIFrameElement> {
+interface IframeProps extends HTMLAttributes<HTMLIFrameElement> {
   head?: React.ReactNode
   mountTarget?: any
-  onMount: () => void
-  onUpdate: () => void
+  onMount?: () => void
+  onUpdate?: () => void
   initialContent?: string
+  children?: React.ReactNode
 }
 
 interface IframeContentProps extends HTMLProps<any> {
