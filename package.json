@@ -1,7 +1,7 @@
 {
-  "name": "@lmtnolimit/react-iframe",
+  "name": "react-iframe-wrapper",
   "author": "Lâm Minh Thành",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "keywords": [
     "React",
@@ -10,7 +10,7 @@
     "component",
     "IframeWrapper"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.prod.json && vite build",
@@ -62,10 +62,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lmtNoLimit/react-iframe.git"
+    "url": "git+https://github.com/sellersmith/react-iframe.git"
   },
   "bugs": {
-    "url": "https://github.com/lmtNoLimit/react-iframe/issues"
+    "url": "https://github.com/sellersmith/react-iframe/issues"
   },
-  "homepage": "https://github.com/lmtNoLimit/react-iframe#readme"
+  "homepage": "https://github.com/sellersmith/react-iframe#readme"
 }
