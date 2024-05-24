@@ -3,13 +3,13 @@
 - npm
 
 ```
-npm intall @lmtnolimit/react-iframe
+npm intall react-iframe-wrapper
 ```
 
 - yarn
 
 ```
-yarn add @lmtnolimit/react-iframe
+yarn add react-iframe-wrapper
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ yarn add @lmtnolimit/react-iframe
 Just simply wrap the components you need using Iframe component
 
 ```
-import { Iframe } from '@lmtnolimit/react-iframe';
+import { Iframe } from 'react-iframe-wrapper';
 
 const MyComponent = () => {
   return (
@@ -55,7 +55,7 @@ const App = () => {
 To access Iframe window or document
 
 ```
-import { useFrame } from '@lmtnolimit/react-iframe';
+import { useFrame } from 'react-iframe-wrapper';
 
 const MyComponent = () => {
   const { document: frameDocument, window: frameWindow } = useFrame();
@@ -77,8 +77,8 @@ This component supports all default props of the iframe extends with these below
 | head           | Components that stay in the head tag | false    | ReactNode   | null                                                     |
 | mountTarget    | where the content should stay in     | false    | HTMLElement |                                                          |
 | initialContent | default srcDoc                       | true     | string      | `<!DOCTYPE html><html><head></head><body></body></html>` |
-| onMount        |                                      | true     |             | () => {}                                                 |
-| onUpdate       |                                      | true     |             | () => {}                                                 |
+| onMount        |                                      | false    |             | () => {}                                                 |
+| onUpdate       |                                      | false    |             | () => {}                                                 |
 
 ## License
 
